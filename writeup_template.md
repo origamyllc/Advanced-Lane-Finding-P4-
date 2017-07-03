@@ -24,7 +24,8 @@ I start by preparing "object points", which will be the (x, y, z) coordinates of
 I then used the output `objpoints` and `imgpoints` to compute the camera calibration and distortion coefficients using the `cv2.calibrateCamera()` function.  I applied this distortion correction to the test image using the `cv2.undistort()` function and obtained this result: 
 
 ### Pipeline (single images)
-* resize the image to a fixed size of 720 X 405
+* Resize the image to a fixed size of 720 X 405
+* Convert the image to HLS color space and separate the S channel
 
 #### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
 
