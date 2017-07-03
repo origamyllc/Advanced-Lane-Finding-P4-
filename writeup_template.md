@@ -24,18 +24,13 @@ I start by preparing "object points", which will be the (x, y, z) coordinates of
 I then used the output `objpoints` and `imgpoints` to compute the camera calibration and distortion coefficients using the `cv2.calibrateCamera()` function.  I applied this distortion correction to the test image using the `cv2.undistort()` function and obtained this result: 
 
 ### Pipeline (single images)
-* Resize the image to a fixed size of 720 X 405
-* Convert the image to HLS color space and separate the S channel
+    #### Resize the image 
+        * Resize the image to a fixed size of 720 X 405
+    #### Do color transforms 
+        * Convert the image to HLS color space and separate the S channel
 * Convert the image to greysacle and then apply sobel transform in both X and Y directions to calculate the gradient
 * Apply threshold on the results  
 * Also apply threshold on the S channel and combine the results 
-
-
-#### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
-
-I used a combination of color and gradient thresholds to generate a binary image (thresholding steps at lines # through # in `another_file.py`).  Here's an example of my output for this step.  (note: this is not actually from one of the test images)
-
-![alt text][image3]
 
 #### 3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
 
