@@ -44,9 +44,13 @@ I then used the output `objpoints` and `imgpoints` to compute the camera calibra
        * Fit a second order polynomial to each
        
  #### 6.  Calculate curvature
+      * Calculate the lane center 
+      * Calculate the deviation from the center
     
-    
-    
+  #### 7. Draw the polyfill on the image 
+       * Create an image to draw the lines on
+       * Recast the x and y points into usable format for cv2.fillPoly()
+  
 ### Discussion
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
