@@ -32,7 +32,9 @@ I then used the output `objpoints` and `imgpoints` to compute the camera calibra
   #### 3. Apply sobel transform in both X and Y directions to calculate the gradient
         * Apply threshold on the results  
         * Also apply threshold on the S channel and combine the results 
-
+  #### 4. Perform a perspective transform 
+  
+  
 #### 3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
 
 The code for my perspective transform includes a function called `warper()`, which appears in lines 1 through 8 in the file `example.py` (output_images/examples/example.py) (or, for example, in the 3rd code cell of the IPython notebook).  The `warper()` function takes as inputs an image (`img`), as well as source (`src`) and destination (`dst`) points.  I chose the hardcode the source and destination points in the following manner:
