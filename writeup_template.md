@@ -42,7 +42,8 @@ I then used the output `objpoints` and `imgpoints` to compute the camera calibra
        * Identify window boundaries in x and y (and right and left)
        * Extract left and right line pixel positions
        * Fit a second order polynomial to each
-    #### 6.  calculat curvature
+       
+ #### 6.  calculat curvature
     
     
     
