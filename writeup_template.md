@@ -53,6 +53,8 @@ I then used the output `objpoints` and `imgpoints` to compute the camera calibra
        * Draw the lane onto the warped blank image
        * Combine the result with the original image
        
+### Video 
+       
 ### Discussion
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
