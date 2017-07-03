@@ -13,7 +13,7 @@ The goals / steps of this project are the following:
 
 ### Project Files 
 * advanced-lane-finding.ipynb
-
+* writeup_template.md
 
 #### Camera Calibration
 
