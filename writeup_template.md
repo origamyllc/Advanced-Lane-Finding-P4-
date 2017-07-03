@@ -24,12 +24,12 @@ I start by preparing "object points", which will be the (x, y, z) coordinates of
 I then used the output `objpoints` and `imgpoints` to compute the camera calibration and distortion coefficients using the `cv2.calibrateCamera()` function.  I applied this distortion correction to the test image using the `cv2.undistort()` function and obtained this result: 
 
 ### Pipeline (single images)
-  #### Resize the image 
+  #### 1. Resize the image 
         * Resize the image to a fixed size of 720 X 405
-  #### Do color transforms 
+  #### 2. Do color transforms 
         * Convert the image to HLS color space and separate the S channel
         * Convert the image to greysacle
-  #### Apply sobel transform in both X and Y directions to calculate the gradient
+  #### 3. Apply sobel transform in both X and Y directions to calculate the gradient
         * Apply threshold on the results  
         * Also apply threshold on the S channel and combine the results 
 
