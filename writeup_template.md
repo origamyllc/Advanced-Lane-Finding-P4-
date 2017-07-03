@@ -38,7 +38,12 @@ I then used the output `objpoints` and `imgpoints` to compute the camera calibra
        * Take a histogram of the bottom half of the image
        * Choose the number of sliding windows
        * Set height of windows
-       * Identify the x and y positions of all nonzero pixels in the image
+       * Step through the windows one by one
+       * Identify window boundaries in x and y (and right and left)
+       * Extract left and right line pixel positions
+       * Fit a second order polynomial to each
+       
+       
 #### 3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
 
 The code for my perspective transform includes a function called `warper()`, which appears in lines 1 through 8 in the file `example.py` (output_images/examples/example.py) (or, for example, in the 3rd code cell of the IPython notebook).  The `warper()` function takes as inputs an image (`img`), as well as source (`src`) and destination (`dst`) points.  I chose the hardcode the source and destination points in the following manner:
