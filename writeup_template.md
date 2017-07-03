@@ -12,7 +12,7 @@ The goals / steps of this project are the following:
 * Output visual display of the lane boundaries and numerical estimation of lane curvature and vehicle position.
 
 ### Project Files 
-advanced-lane-finding.ipynb
+* advanced-lane-finding.ipynb
 
 
 #### Camera Calibration
