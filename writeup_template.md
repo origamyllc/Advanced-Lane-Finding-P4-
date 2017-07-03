@@ -33,6 +33,7 @@ I then used the output `objpoints` and `imgpoints` to compute the camera calibra
         * Apply threshold on the results  
         * Also apply threshold on the S channel and combine the results 
   #### 4. Perform a perspective transform 
+        * Convert the image to a top view perspective so as to detect the lane lines 
   
   
 #### 3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
