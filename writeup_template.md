@@ -28,9 +28,9 @@ I then used the output `objpoints` and `imgpoints` to compute the camera calibra
         * Resize the image to a fixed size of 720 X 405
   #### Do color transforms 
         * Convert the image to HLS color space and separate the S channel
-* Convert the image to greysacle and then apply sobel transform in both X and Y directions to calculate the gradient
-* Apply threshold on the results  
-* Also apply threshold on the S channel and combine the results 
+        * Convert the image to greysacle and then apply sobel transform in both X and Y directions to calculate the gradient
+        * Apply threshold on the results  
+        * Also apply threshold on the S channel and combine the results 
 
 #### 3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
 
