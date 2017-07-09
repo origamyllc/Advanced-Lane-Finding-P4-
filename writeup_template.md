@@ -43,9 +43,11 @@ in order to process a single image I took the following steps
        * Identify window boundaries in x and y (and right and left)
        * Extract left and right line pixel positions
        * Fit a second order polynomial to each
+
  #### 6.  Calculate curvature
       * Calculate the lane center 
       * Calculate the deviation from the center
+
   #### 7. Draw the polyfill on the image 
        * Create an image to draw the lines on
        * Recast the x and y points into usable format for cv2.fillPoly()
@@ -54,4 +56,3 @@ in order to process a single image I took the following steps
        
 ### Video 
       uses the same pipeline as a single image to process multiple frames 
-
