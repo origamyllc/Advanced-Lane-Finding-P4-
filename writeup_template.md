@@ -22,8 +22,7 @@ The code for this step is contained in the first code cell of the IPython notebo
 I start by preparing "object points", which will be the (x, y, z) coordinates of the chessboard corners in the world. Here I am assuming the chessboard is fixed on the (x, y) plane at z=0, such that the object points are the same for each calibration image.  Thus, `objp` is just a replicated array of coordinates, and `objpoints` will be appended with a copy of it every time I successfully detect all chessboard corners in a test image.  `imgpoints` will be appended with the (x, y) pixel position of each of the corners in the image plane with each successful chessboard detection.  
 
 I then used the output `objpoints` and `imgpoints` to compute the camera calibration and distortion coefficients using the `cv2.calibrateCamera()` function.  I applied this distortion correction to the test image using the `cv2.undistort()` function and obtained the result
-![alt text](https://drive.google.com/file/d/0B4K4VNJgUsRgdi1yejRySnVObHc/view?usp=sharing)
-
+![png](./output_images/cameracalibration.png)
 ### Pipeline (single images)
 in order to process a single image I took the following steps 
   #### 1. Resize the image 
@@ -55,5 +54,6 @@ in order to process a single image I took the following steps
        * Draw the lane onto the warped blank image
        * Combine the result with the original image
        
+  ![png](./output_images/lanedtection.png)
 ### Video 
       uses the same pipeline as a single image to process multiple frames 
