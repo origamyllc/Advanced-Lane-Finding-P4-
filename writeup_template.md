@@ -54,6 +54,6 @@ in order to process a single image I took the following steps
        * Draw the lane onto the warped blank image
        * Combine the result with the original image
        
-  ![png](./output_images/lanedtection.png)
+  ![png](./output_images/lanedetection.png)
 ### Video 
       uses the same pipeline as a single image to process multiple frames 
