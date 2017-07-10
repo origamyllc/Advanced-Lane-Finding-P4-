@@ -31,7 +31,7 @@ in order to process a single image I took the following steps
         * Convert the image to HLS color space and separate the S channel
         * Convert the image to greysacle
   #### 3. Apply sobel transform in both X and Y directions to calculate the gradient
-  
+  ![Alt text](https://github.com/origamyllc/Advanced-Lane-Finding-P4-/blob/master/Screen%20Shot%202017-07-09%20at%2011.58.52%20PM.png)
  Initially a number of combinations of color and gradient thresholds were attempted. It was found that none of these were very robust to changing conditions in lighting and contrast. I used a sobel detector and calculated gradient in the x and y directions this solved the problem 
  
         * Apply threshold on the results  
@@ -40,6 +40,8 @@ in order to process a single image I took the following steps
   #### 4. Perform a perspective transform 
   I then changed to a top doen perspective to better facilitate the lane detection as an un transformed image seemed to be missing some lane markers
         * Convert the image to a top view perspective so as to detect the lane lines 
+  ![Alt text](https://github.com/origamyllc/Advanced-Lane-Finding-P4-/blob/master/Screen%20Shot%202017-07-09%20at%2011.59.00%20PM.png)      
+        
   #### 5. Detect the lanes 
  I took a histogram of the bottom half of the image and found the bottom-most x position (or "base") of the left and right lane lines. Originally these locations were identified from the local maxima of the left and right halves of the histogram, but in my final implementation I changed these to quarters of the histogram just left and right of the midpoint. This helped to reject lines from adjacent lanes. The function then identifies ten windows from which to identify lane pixels, each one centered on the midpoint of the pixels from the window below. This effectively "follows" the lane lines up to the top of the binary image, and speeds processing by only searching for activated pixels over a small portion of the image. Pixels belonging to each lane line are identified and the Numpy polyfit() method fits a second order polynomial to each set of pixels.
        * Take a histogram of the bottom half of the image
