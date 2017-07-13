@@ -164,7 +164,7 @@ Another issue faced was using the previous curvature radius to determine if this
 #### Opportunities for improvement 
 include automatically detecting the src points for warp, handling bounce in the road and understanding surface height (above road) of the camera and its impact.The algorithm could also be made to make predictions about the line when there is gaps. 
 
-##### hypothetical cases would cause your pipeline to fail.
+##### Hypothetical cases that would cause the pipeline to fail.
 This would be easier with continuous lines then dashed.It would also fail if there was a road crossing or a need to cross lanes or to exit the freeway.Rain and snow would also have an impact and I’m not sure about night time.
 Tail gating a car or a car on a tighter curve would potentially interrupt the visible camera and hence line detection.
 
