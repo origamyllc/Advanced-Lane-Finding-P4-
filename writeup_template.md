@@ -63,6 +63,5 @@ in order to process a single image I took the following steps
        * Draw the lane onto the warped blank image
        * Combine the result with the original image
   ![Alt text](https://github.com/origamyllc/Advanced-Lane-Finding-P4-/blob/master/Screen%20Shot%202017-07-12%20at%205.57.17%20PM.png)
-  ![png](./output_images/lanedetection.png)
 ### Video 
       uses the same pipeline as a single image to process multiple frames 
