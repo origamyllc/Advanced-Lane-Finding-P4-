@@ -157,12 +157,17 @@ Uses the same pipeline as a single image to process multiple frames it reads the
         return result
 
 ### Discussion
+#### Problems/issues faced.
 This highlighted, that I need to improve my understanding of color spaces, sobel and threshold combinations.
-I included a basic algorithm to remove pavement colors from the images using a centre, left and right focal point. 
 Another issue faced was using the previous curvature radius to determine if this line was sane or not.also another issue was that the left lane line was slightly outside the yellow line the whole time somehow the left side of the  overlay was skewd in the perspective transform to overlay the image 
 
 #### Opportunities for improvement 
-include automatically detecting the src points for warp, handling bounce in the road and understanding surface height (above road) of the camera and its impact.The algorithm could also be made to make predictions about the line when there is gaps. This would be easier with continuous lines then dashed.It would also fail if there was a road crossing or a need to cross lanes or to exit the freeway.Rain and snow would also have an impact and I’m not sure about night time.
+include automatically detecting the src points for warp, handling bounce in the road and understanding surface height (above road) of the camera and its impact.The algorithm could also be made to make predictions about the line when there is gaps. 
+
+##### hypothetical cases would cause your pipeline to fail.
+This would be easier with continuous lines then dashed.It would also fail if there was a road crossing or a need to cross lanes or to exit the freeway.Rain and snow would also have an impact and I’m not sure about night time.
 Tail gating a car or a car on a tighter curve would potentially interrupt the visible camera and hence line detection.
+
+
 
 
