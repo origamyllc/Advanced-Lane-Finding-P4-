@@ -36,7 +36,7 @@ in order to process a single image I took the following steps
  
         * Apply threshold on the results  
         * Also apply threshold on the S channel and combine the results 
-![Alt text](https://github.com/origamyllc/Advanced-Lane-Finding-P4-/blob/master/Screen%20Shot%202017-07-12%20at%205.52.37%20PM.png)
+
   #### 4. Perform a perspective transform 
   I then changed to a top doen perspective to better facilitate the lane detection as an un transformed image seemed to be missing some lane markers
         * Convert the image to a top view perspective so as to detect the lane lines 
@@ -55,7 +55,7 @@ in order to process a single image I took the following steps
  #### 6.  Calculate curvature
       * Calculate the lane center 
       * Calculate the deviation from the center
-
+![Alt text](https://github.com/origamyllc/Advanced-Lane-Finding-P4-/blob/master/Screen%20Shot%202017-07-12%20at%205.52.37%20PM.png)
   #### 7. Draw the polyfill on the image 
   Here I retransform the image back to its original perspective after loverlaying a lane polynomial between the detected lines
        * Create an image to draw the lines on
