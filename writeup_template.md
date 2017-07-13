@@ -155,6 +155,8 @@ Uses the same pipeline as a single image to process multiple frames it reads the
         right_fitx = right_fit[0]*ploty**2 + right_fit[1]*ploty + right_fit[2]
         result = overlay_lane(img,unwarped,left_fitx,right_fitx,ploty,camera_pos,steering_angle[0],turning_radius[0])
         return result
+        
+![Watch the video](https://github.com/origamyllc/Advanced-Lane-Finding-P4-/blob/master/project_video_out6.mp4)
 
 ### Discussion
 #### Problems/issues faced.
